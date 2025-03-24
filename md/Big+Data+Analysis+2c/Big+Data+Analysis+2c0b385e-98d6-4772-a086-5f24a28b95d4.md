@@ -24,17 +24,14 @@ Using the [Telco-Customer-Churn.csv](vscode-file://vscode-app/d:/program/Microso
 
 - **Data Layering**: Creating Bronze tables (raw data) and Silver tables (cleaned data)
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 1; margin: 10px;">
-        <img src="..\md\Big+Data+Analysis+2c\Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4\1742644798474.png" alt="Silver Table" /style="max-width: 100%; height: auto;">
-        <p>Bronze Table</p>
-    </div>
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742644856598.png" alt="Silver Table" /style="max-width: 100%; height: auto;">
-        <p>Silver Table</p>
-    </div>
+<div style="flex: 1; margin: 10px; text-align: center">
+    <img src="..\md\Big+Data+Analysis+2c\Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4\1742644798474.png" alt="Silver Table" /style="max-width: 100%; height: auto;">
+    <p>Bronze Table</p>
 </div>
-
+<div style="flex: 1; margin: 10px; text-align: center">
+    <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742644856598.png" alt="Silver Table" /style="max-width: 100%; height: auto;">
+    <p>Silver Table</p>
+</div>
 ## 3. Implementation of Survival Analysis
 
 ### 3.1 Kaplan-Meier Survival Analysis
@@ -46,7 +43,7 @@ The Kaplan-Meier method was used to estimate customer retention probability, wit
 Analyzed the overall retention situation of all customers, calculating the median survival time (average tenure before customer churn).
 
 <div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 1; margin: 10px;">
+    <div style="flex: 1; margin: 10px;text-align: center">
         <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image.png" alt="Overall Survival Curve"/style="max-width: 100%; height: auto;">
     </div>
 </div>
@@ -91,13 +88,11 @@ Group survival curves were compared for the following variables:
 
 Log-rank tests were used to assess the statistical significance of differences between survival curves of different groups. For example, the code `print_logrank('streamingMovies')` tests the impact of different streaming movie service statuses on customer retention rates.
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645425200.png" alt="Log-rank Test">
-    </div>
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645425204.jpg" alt="Log-rank Test">
-    </div>
+<div style="flex: 1; margin: 10px; text-align: center">
+    <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645425200.png" alt="Log-rank Test"/style="max-width: 100%; height: auto;">
+</div>
+<div style="flex: 1; margin: 10px; text-align: center">
+    <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645425204.jpg" alt="Log-rank Test"/style="max-width: 100%; height: auto;">
 </div>
 
 ### 3.2 Cox Proportional Hazards Regression Model
@@ -110,13 +105,11 @@ The Cox proportional hazards model was used to analyze the simultaneous impact o
 
 - One-hot encoding was applied to categorical variables
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645600231.png" alt="Variable Selection">
-    </div>
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742646502580.png" alt="Variable Selection">
-    </div>
+<div style="flex: 1; margin: 10px;">
+    <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742645600231.png" alt="Variable Selection"/style="max-width: 100%; height: auto;">
+</div>
+<div style="flex: 1; margin: 10px;">
+    <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742646502580.png" alt="Variable Selection"/style="max-width: 100%; height: auto;">
 </div>
 
 #### 3.2.2 Model Assumption Verification
@@ -131,26 +124,26 @@ Verified whether the model meets the proportional hazards assumption:
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742646539757.png" alt="Statistical Tests">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742646539757.png" alt="Statistical Tests"/style="max-width: 100%; height: auto;">
         <p>Statistical Tests</p>
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 1.png" alt="Schoenfeld Residuals">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 1.png" alt="Schoenfeld Residuals"/style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 2.png" alt="Schoenfeld Residuals">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 2.png" alt="Schoenfeld Residuals"/style="max-width: 100%; height: auto;">
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 3.png" alt="Log-log Kaplan-Meier Curve">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 3.png" alt="Log-log Kaplan-Meier Curve"/style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 4.png" alt="Log-log Kaplan-Meier Curve">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 4.png" alt="Log-log Kaplan-Meier Curve"/style="max-width: 100%; height: auto;">
     </div>
 </div>
 
@@ -160,19 +153,19 @@ To get another view of what the issue at play is here, we can use log-log Kaplan
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 5.png" alt="Log-log Kaplan-Meier Plot">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 5.png" alt="Log-log Kaplan-Meier Plot"/style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 6.png" alt="Log-log Kaplan-Meier Plot">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 6.png" alt="Log-log Kaplan-Meier Plot"/style="max-width: 100%; height: auto;">
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 7.png" alt="Log-log Kaplan-Meier Plot">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 7.png" alt="Log-log Kaplan-Meier Plot"/style="max-width: 100%; height: auto;">
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 8.png" alt="Log-log Kaplan-Meier Plot">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 8.png" alt="Log-log Kaplan-Meier Plot"/style="max-width: 100%; height: auto;">
     </div>
 </div>
 
@@ -230,13 +223,11 @@ To get another view of what the issue at play is here, we can use log-log Kaplan
 
 ---
 
-<div style="display: flex; flex-wrap: wrap;">
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742745348996.png" alt="Model Performance Metrics">
-    </div>
-    <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 9.png" alt="Model Performance Metrics">
-    </div>
+<div style="flex: 1; margin: 10px;">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742745348996.png" alt="Model Performance Metrics"/style="max-width: 100%; height: auto;">
+</div>
+<div style="flex: 1; margin: 10px;">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 9.png" alt="Model Performance Metrics"/style="max-width: 100%; height: auto;">
 </div>
 
 ## 4.4 **Assessing Model Assumptions**
@@ -257,44 +248,44 @@ To get another view of what the issue at play is here, we can use log-log Kaplan
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 10.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 10.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>Partner</p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 11.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 11.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>MultipleLine</p>
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 12.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 12.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>internetService</p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 13.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 13.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>onlineSecurity</p>
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 14.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 14.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>onlineBackup</p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 15.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 15.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>deviceProtection</p>
     </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 16.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 16.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>techsupport</p>
     </div>
     <div style="flex: 1; margin: 10px;">
-        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 17.png" alt="Proportional Odds">
+        <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/image 17.png" alt="Proportional Odds"/style="max-width: 100%; height: auto;">
         <p>paymentMethod</p>
     </div>
 </div>
