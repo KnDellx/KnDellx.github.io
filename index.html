@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Gao Ruoxuan - Personal Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,6 +44,10 @@
         }
         .section h2 {
             color: #333;
+            font-family: 'Georgia', serif; /* 更改字体 */
+        }
+        .section p, .section ul {
+            font-family: 'Georgia', serif; /* 更改字体 */
         }
         ul {
             list-style: none;
@@ -80,6 +85,12 @@
             font-size: 7rem; /* 放大字体 */
             margin-right: 20px; /* 调整标题和图像之间的间距 */
         }
+        .artistic-font-blog {
+            font-family: 'Dancing Script', cursive; /* 使用艺术字字体 */
+            font-size: 2rem; /* 放大字体 */
+            margin-right: 20px; /* 调整标题和图像之间的间距 */
+        }
+        
         .blog-list {
             display: flex;
             flex-direction: column;
@@ -96,10 +107,12 @@
         .blog-item a {
             text-decoration: none;
             color: #333;
+            transition: color 0.3s; /* 添加过渡效果 */
         }
         
         .blog-item a:hover {
-            text-decoration: underline;
+            color: #716a6a; /* 鼠标悬停时字体颜色变暗 */
+            text-decoration: none; /* 不显示下划线 */
         }
     </style>
 </head>
@@ -114,6 +127,9 @@
             </a>
             <a href="https://github.com/KnDellx" target="_blank">
                 <img src="img\icons8-github-50.png" alt="GitHub">
+            </a>
+            <a href="https://github.com/KnDellx" target="_blank">
+                <img src="img\icons8-twitter-50.png" alt="X">
             </a>
         </div>
     </header>
@@ -138,8 +154,6 @@
             <h2>Contact</h2>
             <p>You can reach me through the following channels:</p>
             <ul>
-                <li>LinkedIn: [Your LinkedIn profile]</li>
-                <li>GitHub: [Your GitHub profile]</li>
                 <li>Email: 20040712g@gmail.com / 12211103@mail.sustech.edu.cn </li>
             </ul>
         </section>
@@ -157,14 +171,14 @@
             <div class="blog-list">
                 <div class="blog-item">
                     <a href="blog\BigDataAnalysisProject1.html">
-                        <h3>Blog Title 1</h3>
-                        <p>Blog description 1...</p>
+                        <h3 class="artistic-font-blog">STA323 Big Data Analysis Project</h3>
+                        <p></p>
                     </a>
                 </div>
                 <div class="blog-item">
                     <a href="blog\blog2.html">
-                        <h3>Blog Title 2</h3>
-                        <p>Blog description 2...</p>
+                        <h3 class = 'artistic-font-blog'>Blog Title 2</h3>
+                        <p>Blog description ...</p>
                     </a>
                 </div>
                 <!-- Add more blog items as needed -->

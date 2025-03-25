@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD007 -->
-# Telecom Customer Churn Survival Analysis Report
+# **_Telecom Customer Churn Survival Analysis Report_**
+---
 
 ## 1. Research Background and Objectives
 
@@ -32,6 +33,7 @@ Using the [Telco-Customer-Churn.csv](vscode-file://vscode-app/d:/program/Microso
     <img src="../md/Big+Data+Analysis+2c/Big+Data+Analysis+2c0b385e-98d6-4772-a086-5f24a28b95d4/1742644856598.png" alt="Silver Table" /style="max-width: 100%; height: auto;">
     <p>Silver Table</p>
 </div>
+
 ## 3. Implementation of Survival Analysis
 
 ### 3.1 Kaplan-Meier Survival Analysis
