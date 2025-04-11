@@ -5,6 +5,52 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        /* 顶部导航栏样式 */
+        .navbar-title a {
+            color: #fff; /* 白色文字 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 1.5rem; /* 标题字体大小 */
+            font-weight: bold;
+            transition: color 0.3s ease; /* 颜色过渡效果 */
+        }
+        .navbar-title a:hover {
+            color: #00a0e9; /* 鼠标悬停时文字颜色变化 */
+            text-decoration: none; /* 确保悬停时无下划线 */
+        }
+        /* 顶部导航栏样式 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a; /* 深色背景 */
+            color: #fff; /* 白色文字 */
+            padding: 1rem 2rem; /* 内边距 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+        }
+        .navbar-title {
+            font-size: 1.5rem; /* 标题字体大小 */
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-title span {
+            margin-left: 0.5rem; /* 图标与文字间距 */
+            font-size: 1.2rem;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 1.5rem; /* 菜单项间距 */
+        }
+        .navbar-menu a {
+            color: #fff; /* 白色文字 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 1rem; /* 字体大小 */
+            transition: color 0.3s ease; /* 颜色过渡效果 */
+        }
+        .navbar-menu a:hover {
+            color: #00a0e9; /* 鼠标悬停时的高亮颜色 */
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to bottom, #050505, #1a2a6c); /* 深色渐变背景 */
@@ -128,10 +174,21 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
+     <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <div class="navbar-title">
+            <a href="../index.html">Leo's Blog</a>
+            <span>🌐</span> <!-- 图标 -->
+        </div>
+        <div class="navbar-menu">
+            <a href="#posts">Posts</a>
+            <a href="#archive">Archive</a>
+            <a href="#search">Search</a>
+            <a href="#tags">Tags</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
     <div class="container">
-        <a href="../index.html" class="back-button">
-            <img src="..\img\icons8-home-50.png" alt="GitHub">
-        </a> <!-- 添加返回主页按钮 -->
         <div id="blog-content" class="blog-content"></div>
     </div>
     <script>
